@@ -7,7 +7,7 @@ services:
     environment:
       - DB_HOST=db
       - DB_USER=root
-      - DB_PASSWORD=1qa2ws3ed
+      - DB_PASSWORD=password
       - DB_NAME=test_db
     depends_on:
       - db
@@ -16,7 +16,7 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=1qa2ws3ed
+      - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=test_db
     ports:
       - "3308:3306"
